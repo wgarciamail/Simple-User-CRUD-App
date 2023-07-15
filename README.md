@@ -3,7 +3,7 @@
 Source: [Laravel Tutorial For Beginners (Simple User CRUD App)](https://youtu.be/cDEVWbz2PpQ?list=TLPQMTQwNzIwMjNOvt_IvqvlAA) 
 
 # Comandos
-This arr the comand using in the diferent stage of project build.
+This arre the comand using in the diferent stage of project build.
 
 ### Creating new project
 
@@ -24,7 +24,7 @@ $request->validate([
 ### Database
 `php artisan migrate` : Gnerate all migration that still not running on the database.
 
-### login and logout
+### Login and Logout
 
 `auth()->logout();`: Log the user out of the application..
 `auth()->attempt(['user', 'password'])`: Attempt to authenticate a user using the given credentials..
@@ -93,4 +93,9 @@ The next code in the `Post` model, allow get the information that user by each p
 public function user(){
     return $this->belongsTo(User::class, 'user_id'); //one to many relationship with User model.
 }
+```
+After that you can use the model `Post` in this way: 
+```php
+$postInfo=Post::find($id);
+$userInfo=$postInfo->user->name;
 ```
