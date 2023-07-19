@@ -1,4 +1,4 @@
-# Laraver Tutorial For Beginners (Simple Use Crud App)
+# Laraver Tutorial (Simple Use Crud App)
 
 Source: [Laravel Tutorial For Beginners (Simple User CRUD App)](https://youtu.be/cDEVWbz2PpQ?list=TLPQMTQwNzIwMjNOvt_IvqvlAA) 
 
